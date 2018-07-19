@@ -85,8 +85,12 @@ When examining the data, consider the following questions:
 
 
 ```python
-# Read in the data from ages.csv
+import pandas as pd
 
+# read the stored data 'ages.csv'
+ages = None
+
+# calculate the mean and the variance and print
 mean = None
 std = None
 print("Mean Life Expectancy: {}".format(mean))
@@ -98,7 +102,6 @@ print("Standard Deviation: {}".format(std))
 import matplotlib.pyplot as plt
 %matplotlib inline
 # Plot a histogram of the data in ages.csv with 8 bins.  Bonus points for labeling and styling your graph!
-
 ```
 
 ### Conclusion
