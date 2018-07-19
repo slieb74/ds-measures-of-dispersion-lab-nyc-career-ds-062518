@@ -100,16 +100,14 @@ When examining the data, consider the following questions:
 ```python
 import pandas as pd
 
+# read the stored data 'ages.csv'
 ages = pd.read_csv('ages.csv', squeeze=True)
-```
 
-
-```python
-import matplotlib.pyplot as plt
-%matplotlib inline
-plt.hist(ages, bins=8)
-print('Mean Life Expectancy: {}'.format(np.mean(ages)))
-print('Standard Deviation: {}'.format(np.std(ages)))
+# calculate the mean and the variance and print
+mean = np.mean(ages)
+std = np.std(ages)
+print("Mean Life Expectancy: {}".format(mean))
+print("Standard Deviation: {}".format(std))
 ```
 
     Mean Life Expectancy: 38.292929292929294
@@ -117,7 +115,14 @@ print('Standard Deviation: {}'.format(np.std(ages)))
 
 
 
-![png](index_files/index_6_1.png)
+```python
+import matplotlib.pyplot as plt
+%matplotlib inline
+plt.hist(ages, bins=8);
+```
+
+
+![png](index_files/index_6_0.png)
 
 
 ### Conclusion
