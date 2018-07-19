@@ -98,15 +98,10 @@ When examining the data, consider the following questions:
 
 
 ```python
+import pandas as pd
+
 ages = pd.read_csv('ages.csv', squeeze=True)
 ```
-
-
-
-
-    27.172259460501756
-
-
 
 
 ```python
@@ -119,10 +114,10 @@ print('Standard Deviation: {}'.format(np.std(ages)))
 
     Mean Life Expectancy: 38.292929292929294
     Standard Deviation: 27.034677515904274
-    
 
 
-![png](output_6_1.png)
+
+![png](index_files/index_6_1.png)
 
 
 ### Conclusion
